@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let data = ["AAA", "BBB", "CCC", "DDD", "EEE"]
+    
+    let columns = [
+        GridItem(.flexible()), GridItem(.flexible())
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 10) {
+                    ForEach(data, id: \.self) { i in
+                        Button {
+                            
+                        } label: {
+                            Text(i)
+                        }
+                        .font(.title)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .foregroundColor(.black)
+                        .background(.gray)
+                        .cornerRadius(8)
+                    }
+                }
+                .padding()
+            }
+            .navigationBarTitle("Testing")
         }
-        .padding()
     }
 }
 
