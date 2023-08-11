@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    let data = ["AAA", "BBB", "CCC", "DDD", "EEE"]
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     let columns = [
         GridItem(.flexible()), GridItem(.flexible())
@@ -18,25 +17,45 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns, spacing: 10) {
-                    ForEach(data, id: \.self) { i in
-                        Button {
-                            
-                        } label: {
-                            Text(i)
-                        }
-                        .font(.title)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .foregroundColor(.black)
-                        .background(.gray)
-                        .cornerRadius(8)
+                LazyVGrid(columns: columns) {
+                    NavigationLink {
+                        Calendar()
+                    } label: {
+                        Text("Calendar")
                     }
+                    .myButtonStyle()
+                    
+                    NavigationLink {
+                        DarkMode()
+                    } label: {
+                        Text("Dark Mode")
+                    }
+                    .myButtonStyle()
+                    
+                    NavigationLink {
+                        
+                    } label: {
+                        Text("Test")
+                    }
+                    .myButtonStyle()
+                    
+                    NavigationLink {
+                        
+                    } label: {
+                        Text("Test")
+                    }
+                    .myButtonStyle()
                 }
                 .padding()
             }
-            .navigationBarTitle("Testing")
+            .navigationBarTitle("Main", displayMode: .inline)
+            .navigationBarItems(leading:
+                                    Button("왼쪽")
+                                { /*code*/  }
+                                ,trailing: Button("오른쪽")
+                                { /*code*/ } )
         }
+        .environment(\.colorScheme, isDarkMode ? .dark : .light)
     }
 }
 

@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702F0ECE2A84D0090039B032 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702F0ECD2A84D0090039B032 /* Calendar.swift */; };
+		702F0ED02A84D4210039B032 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702F0ECF2A84D4210039B032 /* Extensions.swift */; };
 		70369C852A84B3D9002239A5 /* Swiftui_examplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70369C842A84B3D9002239A5 /* Swiftui_examplesApp.swift */; };
 		70369C872A84B3D9002239A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70369C862A84B3D9002239A5 /* ContentView.swift */; };
 		70369C892A84B3DB002239A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70369C882A84B3DB002239A5 /* Assets.xcassets */; };
 		70369C8C2A84B3DB002239A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70369C8B2A84B3DB002239A5 /* Preview Assets.xcassets */; };
+		708ADB452A85ED6E00CB890E /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708ADB442A85ED6E00CB890E /* DarkMode.swift */; };
+		708ADB472A85EDFD00CB890E /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708ADB462A85EDFD00CB890E /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		702F0ECD2A84D0090039B032 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		702F0ECF2A84D4210039B032 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		70369C812A84B3D9002239A5 /* Swiftui-examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftui-examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70369C842A84B3D9002239A5 /* Swiftui_examplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftui_examplesApp.swift; sourceTree = "<group>"; };
 		70369C862A84B3D9002239A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		70369C882A84B3DB002239A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70369C8B2A84B3DB002239A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		708ADB442A85ED6E00CB890E /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
+		708ADB462A85EDFD00CB890E /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			children = (
 				70369C842A84B3D9002239A5 /* Swiftui_examplesApp.swift */,
 				70369C862A84B3D9002239A5 /* ContentView.swift */,
+				702F0ECD2A84D0090039B032 /* Calendar.swift */,
+				708ADB442A85ED6E00CB890E /* DarkMode.swift */,
+				708ADB462A85EDFD00CB890E /* TabView.swift */,
 				70369C882A84B3DB002239A5 /* Assets.xcassets */,
+				702F0ECF2A84D4210039B032 /* Extensions.swift */,
 				70369C8A2A84B3DB002239A5 /* Preview Content */,
 			);
 			path = "Swiftui-examples";
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				70369C872A84B3D9002239A5 /* ContentView.swift in Sources */,
+				708ADB452A85ED6E00CB890E /* DarkMode.swift in Sources */,
+				702F0ECE2A84D0090039B032 /* Calendar.swift in Sources */,
 				70369C852A84B3D9002239A5 /* Swiftui_examplesApp.swift in Sources */,
+				708ADB472A85EDFD00CB890E /* TabView.swift in Sources */,
+				702F0ED02A84D4210039B032 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
