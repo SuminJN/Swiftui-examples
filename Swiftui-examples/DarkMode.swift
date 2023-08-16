@@ -18,7 +18,6 @@ struct DarkMode: View {
                 isDarkMode ? Label("Dark", systemImage: "lightbulb.fill") : Label("Light", systemImage: "lightbulb")
             }
         }
-        .environment(\.colorScheme, isDarkMode ? .dark : .light)
     }
 }
 

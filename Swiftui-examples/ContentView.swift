@@ -33,27 +33,16 @@ struct ContentView: View {
                     .myButtonStyle()
                     
                     NavigationLink {
-                        
+                        TabViewEx()
                     } label: {
-                        Text("Test")
-                    }
-                    .myButtonStyle()
-                    
-                    NavigationLink {
-                        
-                    } label: {
-                        Text("Test")
+                        Text("Tab View")
                     }
                     .myButtonStyle()
                 }
                 .padding()
             }
             .navigationBarTitle("Main", displayMode: .inline)
-            .navigationBarItems(leading:
-                                    Button("왼쪽")
-                                { /*code*/  }
-                                ,trailing: Button("오른쪽")
-                                { /*code*/ } )
+            .navigationBarItems(leading: Button("왼쪽") { }, trailing: Button("오른쪽") { })
         }
         .environment(\.colorScheme, isDarkMode ? .dark : .light)
     }
