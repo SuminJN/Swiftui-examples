@@ -61,9 +61,7 @@
 			children = (
 				70369C842A84B3D9002239A5 /* Swiftui_examplesApp.swift */,
 				70369C862A84B3D9002239A5 /* ContentView.swift */,
-				702F0ECD2A84D0090039B032 /* Calendar.swift */,
-				708ADB442A85ED6E00CB890E /* DarkMode.swift */,
-				708ADB462A85EDFD00CB890E /* TabView.swift */,
+				70BB31842A8C9BE0009E5103 /* View */,
 				70369C882A84B3DB002239A5 /* Assets.xcassets */,
 				702F0ECF2A84D4210039B032 /* Extensions.swift */,
 				70369C8A2A84B3DB002239A5 /* Preview Content */,
@@ -77,6 +75,16 @@
 				70369C8B2A84B3DB002239A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70BB31842A8C9BE0009E5103 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				702F0ECD2A84D0090039B032 /* Calendar.swift */,
+				708ADB442A85ED6E00CB890E /* DarkMode.swift */,
+				708ADB462A85EDFD00CB890E /* TabView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
